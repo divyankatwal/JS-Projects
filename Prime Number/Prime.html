@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime No.</title>
+        <script type="text/javascript">
+            function check() {
+                var number = document.getElementById('num').value;
+                if(number==1) {
+                    res = "Neither a prime no. nor a composite no.";
+                }
+                else if(number < 1) {
+                    res= "Not a prime no.";
+                }
+                else {
+                    for(var i=2; i<number; i++){
+                        if(number%i==0){
+                            res= "Not a prime no.";
+                            break;
+                        }
+                        else {
+                            res= "Prime no.";
+                        }
+                    }
+                }
+                document.getElementById('res').innerText = res;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="number" name="" step="any" id="num" />
+        <button onclick="check()">Check</button>
+        <h1 id="res"></h1>
+    </body>
+</html>

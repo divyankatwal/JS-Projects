@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Check</title>
+        <script type="text/javascript">
+            function check() {
+                var num = document.getElementById('number').value;
+                //document.getElementById('result').innerText = Math.sign(num);
+                if(num > 0){
+                    result = num+" is a Positive Number";
+                }
+                else if(num < 0){
+                    result = num+" is a Negative Number";
+                }
+                else if(num == 0){
+                    result = num+" is Zero";
+                }
+                document.getElementById('result').innerText = result;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Checking the Sign</h1>
+        <input type="number" name="" step="any" id="number" />
+        <button onclick="check()">Check</button>
+        <h2 id="result"></h2>
+    </body>
+</html>

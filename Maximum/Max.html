@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Finding Maximum</title>
+        <script type="text/javascript">
+            let a = parseInt(prompt("Please Enter the first number",""));
+            let b = parseInt(prompt("Please Enter the second number",""));
+            let c = parseInt(prompt("Please Enter the third number",""));
+            document.write("Numbers : "+a+" , "+b+" , "+c+"<br>"+"<br>");
+            var num = [a, b, c];
+            var max = num[0];
+            for(var i=1; i<3; i++){
+                if(num[i]>max){
+                    max = num[i];
+                }
+            }
+            document.write("Maximum : "+max);
+        </script>
+    </head>
+</html>
