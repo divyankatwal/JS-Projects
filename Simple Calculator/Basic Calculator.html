@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Calculator</title>
+        <script type="text/javascript">
+            let num1 = prompt("Please Enter First number","");
+            let num2 = prompt("Please Enter Second number","");
+            let opr = prompt("Please choose one operation : +,-,x,/","");
+
+            switch(opr){
+
+                case "+" : 
+                    var res = parseFloat(num1) + parseFloat(num2);
+                    document.write("Result : "+num1+" "+opr+" "+num2+" = "+res);
+                    break;
+
+                case "-" :
+                    var res = parseFloat(num1) - parseFloat(num2);
+                    document.write("Result : "+num1+" "+opr+" "+num2+" = "+Math.abs(res));
+                    break;
+
+                case "x" :
+                    var res = parseFloat(num1) * parseFloat(num2);
+                    document.write("Result : "+num1+" "+opr+" "+num2+" = "+res);
+                    break;
+
+                case "/":
+                    if(parseFloat(num1)>parseFloat(num2)) {
+                        var res = parseFloat(num1) / parseFloat(num2);
+                    }
+                    else {
+                        var res = parseFloat(num1) / parseFloat(num2);
+                    }
+                    document.write("Result : "+num1+" "+opr+" "+num2+" = "+res);
+                    break;
+
+                default :
+                    document.write("Invalid Operator");
+            }
+        </script>
+    </head>
+</html>
