@@ -14,9 +14,7 @@ function manual() {
     const manualColor = document.getElementById('color-data').value;
     document.body.style.backgroundColor = manualColor;
     console.log(manualColor);
-    toastr.success("Color Code Copied");
-    
-    navigator.clipboard.writeText(colorCode)
+    toastr.success("Color Changed");
 }
 document.getElementById("btn").addEventListener(
     "click",
