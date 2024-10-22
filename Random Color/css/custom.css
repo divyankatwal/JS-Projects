@@ -36,3 +36,11 @@ button {
     display: block;
     font-size: 35px;
 }
+input {
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    font-size: large;
+    text-align: center;
+}
